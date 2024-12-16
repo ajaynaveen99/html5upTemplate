@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Parent Properties Examples</title>
+    <style>
+        .section {
+            margin-bottom: 50px;
+        }
+        .container {
+            display: flex;
+            height: 200px;
+            border: 2px solid #333;
+            margin-bottom: 40px;
+        }
+        .item {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+        .item:nth-child(odd) {
+            background-color: #FF5722;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Flex Direction Example -->
+    <div class="section">
+        <h2>Flex Direction Example</h2>
+        <div class="container" style="flex-direction: column;">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+    </div>
+
+    <!-- Justify Content Example -->
+    <div class="section">
+        <h2>Justify Content Example</h2>
+        <div class="container" style="justify-content: space-between;">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+    </div>
+
+    <!-- Align Items Example -->
+    <div class="section">
+        <h2>Align Items Example</h2>
+        <div class="container" style="align-items: flex-start; height: 400px;">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+    </div>
+
+    <!-- Flex Wrap Example -->
+    <div class="section">
+        <h2>Flex Wrap Example</h2>
+        <div class="container" style="flex-wrap: wrap;">
+            <div class="item" style="flex: 1 1 30%;">Item 1</div>
+            <div class="item" style="flex: 1 1 30%;">Item 2</div>
+            <div class="item" style="flex: 1 1 30%;">Item 3</div>
+            <div class="item" style="flex: 1 1 30%;">Item 4</div>
+            <div class="item" style="flex: 1 1 30%;">Item 5</div>
+        </div>
+    </div>
+
+    <!-- Align Content Example -->
+    <div class="section">
+        <h2>Align Content Example</h2>
+        <div class="container" style="flex-wrap: wrap; align-content: space-between; height: 400px;">
+            <div class="item" style="flex: 1 1 30%;">Item 1</div>
+            <div class="item" style="flex: 1 1 30%;">Item 2</div>
+            <div class="item" style="flex: 1 1 30%;">Item 3</div>
+            <div class="item" style="flex: 1 1 30%;">Item 4</div>
+            <div class="item" style="flex: 1 1 30%;">Item 5</div>
+        </div>
+    </div>
+
+    <!-- Gap Example -->
+    <div class="section">
+        <h2>Gap Example</h2>
+        <div class="container" style="gap: 20px;">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Self Example</title>
+    <style>
+        .container {
+            display: flex;
+            height: 200px;
+            border: 2px solid #333;
+        }
+
+        .item1 {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            align-self: flex-start; /* Aligns this item to the start */
+        }
+
+        .item2 {
+            background-color: #FF5722;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            align-self: center; /* Aligns this item to the center */
+        }
+
+        .item3 {
+            background-color: #9C27B0;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            align-self: flex-end; /* Aligns this item to the end */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+    </div>
+</body>
+</html>
